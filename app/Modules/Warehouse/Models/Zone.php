@@ -15,7 +15,7 @@ class Zone extends Model {
 	|--------------------------------------------------------------------------
 	*/
 
-    protected $table = 'zones';
+    protected $table = 'warehouse_zones';
     // protected $primaryKey = 'id';
     // protected $guarded = [];
     // protected $hidden = ['id'];

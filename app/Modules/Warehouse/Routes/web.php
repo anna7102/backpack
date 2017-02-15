@@ -11,8 +11,11 @@
 |
 */
 
-Route::group(['prefix' => 'warehouse'], function () {
-    Route::get('/showWelcome', [
-        'uses' => 'WarehouseController@showWelcome'
-    ]);
+// Admin Interface Routes
+Route::group(['prefix' => 'admin'], function()
+{
+    // Backpack\CRUD: Define the resources for the entities you want to CRUD.
+    CRUD::resource('warehouse', 'WarehouseCrudController');
+
+    // [...] other routes
 });

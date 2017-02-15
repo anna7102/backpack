@@ -13,11 +13,11 @@ class CreateWarehouseWarehousesTable extends Migration
      */
     public function up()
     {
-        Schema::create('warehouses', function (Blueprint $table) {
+        Schema::create('warehouse_warehouses', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
             $table->string('name');
-            $table->string('address');
+            $table->string('adress');
         });
     }
 
@@ -28,6 +28,6 @@ class CreateWarehouseWarehousesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('warehouses');
+        Schema::dropIfExists('warehouse_warehouses');
     }
 }

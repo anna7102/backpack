@@ -13,7 +13,7 @@ class CreateWarehouseLocationsTable extends Migration
      */
     public function up()
     {
-        Schema::create('locations', function (Blueprint $table) {
+        Schema::create('warehouse_locations', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
             $table->string('name');
@@ -28,7 +28,7 @@ class CreateWarehouseLocationsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('locations');
+        Schema::dropIfExists('warehouse_locations');
 
     }
 }

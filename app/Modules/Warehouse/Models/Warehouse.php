@@ -1,10 +1,10 @@
 <?php
 
-namespace App\app\Modules\Warehouse\Models;
+namespace App\Modules\Warehouse\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Backpack\CRUD\CrudTrait;
-use App\app\Modules\Warehouse\Models\Zone as Zone;
+use App\Modules\Warehouse\Models\Zone as Zone;
 
 class Warehouse extends Model {
 
@@ -16,7 +16,7 @@ class Warehouse extends Model {
 	|--------------------------------------------------------------------------
 	*/
 
-    protected $table = 'warehouses';
+    protected $table = 'warehouse_warehouses';
     // protected $primaryKey = 'id';
     // protected $guarded = [];
     // protected $hidden = ['id'];

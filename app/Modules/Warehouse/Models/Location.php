@@ -15,7 +15,7 @@ class Location extends Model {
 	|--------------------------------------------------------------------------
 	*/
 
-    protected $table = 'zones';
+    protected $table = 'warehouse_locations';
     // protected $primaryKey = 'id';
     // protected $guarded = [];
     // protected $hidden = ['id'];
